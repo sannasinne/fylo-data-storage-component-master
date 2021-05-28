@@ -154,6 +154,8 @@ span {
     flex-direction: row;
     gap: 3rem;
     background-image: url("../images/bg-desktop.png");
+    background-size: contain;
+    background-position: bottom;
   }
 
   .fylo {
@@ -173,6 +175,7 @@ span {
 
   .gb-left {
     position: absolute;
+    border-bottom-right-radius: 0;
     transform: translate(33rem , -8rem);
   }
 
@@ -180,7 +183,13 @@ span {
     content: '';
     position: absolute;
     display: block;
-    
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 0 2.4rem 2.4rem 0;
+    border-color: transparent var(--white) transparent transparent;
+    bottom: -2.4rem;
+    left: 86.5%;
   }
 }
 
